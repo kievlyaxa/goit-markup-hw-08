@@ -1,0 +1,72 @@
+.container.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-item {
+  display: inline-block;
+  width: 267px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.container .features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.container li {
+  list-style: none;
+}
+
+.features-title {
+  display: none;
+}
+
+.features-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  background-color: $background-secondary-color;
+}
+
+.features-list.satellite::before {
+  background-image: url(../image/antenna1.svg);
+}
+
+.features-list.clock::before {
+  background-image: url(../image/clock1.svg);
+}
+
+.features-list.diagram::before {
+  background-image: url(../image/diagram1.svg);
+}
+
+.features-list.spase::before {
+  background-image: url(../image/astronaut1.svg);
+}
+
+.container .title {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container .description {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,41 @@
+.filter {
+  display: none;
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    padding: 93px 0 34px;
+    margin: auto;
+
+    & button {
+      font-family: "Roboto Medium";
+      font-size: 16px;
+      line-height: 1.625;
+      letter-spacing: 0.03em;
+      color: $secondary-text-color;
+      background-color: $background-secondary-color;
+      border-radius: 4px;
+      border-color: transparent;
+      padding: 6px 22px;
+      transition: background-color 250ms $timing-function,
+        color 250ms $timing-function;
+    }
+
+    & button:hover,
+    & button:focus {
+      background-color: $accent-color;
+      color: $white-text-color;
+      cursor: pointer;
+    }
+  }
+
+  &-list:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+button.current {
+  background-color: $accent-color;
+  color: $white-text-color;
+  cursor: pointer;
+}

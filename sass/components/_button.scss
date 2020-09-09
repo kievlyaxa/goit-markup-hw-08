@@ -1,0 +1,27 @@
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto Bold";
+  color: $background-color;
+  background-color: $accent-color;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 10px 32px;
+  letter-spacing: 0.06em;
+  border: 2px;
+  border-radius: 4px;
+  width: 200px;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+  color: $white-text-color;
+  border: 1px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
