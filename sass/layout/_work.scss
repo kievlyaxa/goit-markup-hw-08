@@ -29,19 +29,25 @@
     & img {
       display: block;
     }
-    & li:not(:last-child) {
-      margin-right: 30px;
-    }
+    // & li:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
   &-title {
     font-family: "Roboto Bold";
-    font-size: 35px;
+    // font-size: 35px;
+    font-size: 28px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
     margin: auto;
     margin-top: 0;
     margin-bottom: 50px;
+    // margin-bottom: 30px;
     width: 376px;
   }
+}
+
+.section-work {
+  display: none;
 }

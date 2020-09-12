@@ -3,21 +3,33 @@
 
   &-title {
     font-family: "Roboto Black";
-    font-size: 44px;
+
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-text-color;
-    width: 696px;
-    margin: auto;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    padding-top: 200px;
+    // width: 696px;
+    width: 100%;
+    //   margin: auto;
+    margin-top: 118px;
+    //   margin-bottom: 30px;
+    //   padding-top: 200px;
+
+    @include for-size(desktop) {
+      font-size: 44px;
+    }
   }
 
   &-img {
-    max-width: 1600px;
-    height: 600px;
+    // max-width: 1600px;
+
+    // height: 600px;
+    max-width: 480px;
+    width: 480px;
+    height: auto;
+    // height: 400px;
+    // object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
