@@ -1,10 +1,21 @@
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: $logo-color;
+
+  @include for-size(phone-only) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @include for-size(tablet-portrait) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @include for-size(desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-web {

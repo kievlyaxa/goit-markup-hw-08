@@ -1,26 +1,43 @@
 .contacts {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @media screen and (max-width: 1199px) {
+    margin-left: 84px;
+    padding-right: 15px;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // margin-right: 215px;
+  }
 }
 
 .contacts-link {
-  display: none;
-  // display: flex;
-  // align-items: center;
-  text-decoration: none;
-  font-family: "Roboto Medium";
-  // font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  transition: color 250ms $timing-function, fill 250ms $timing-function;
+  @include for-size(phone-only) {
+    display: none;
+  }
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Roboto Medium";
+    // font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+  }
 }
 
 .contacts-mail {
-  margin-right: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 10px;
+  }
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 
 .contacts-icon {

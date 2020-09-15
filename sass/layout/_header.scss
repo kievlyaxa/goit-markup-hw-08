@@ -4,17 +4,26 @@
 }
 
 .hat-logo {
-  width: 170px;
+  // width: 100%;
+  white-space: nowrap;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-right: 85px;
+
+  margin-right: 0;
+  @media screen and (max-width: 1199px) {
+    margin-left: 15px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 215px;
+  }
 }
 
-.hat-link {
-  width: 370px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+// .hat-link {
+//   width: 370px;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
 
 .header {
   width: 100%;
